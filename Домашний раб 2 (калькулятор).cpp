@@ -118,7 +118,7 @@ double my_amazing_calculator(string& line) {
 }
 
 int main() {
-    string main_line = "2*(-10+(-25))^1/2*0.15"; // 2*(-10+25)^1/2*0.15
-    //cin >> main_line;
+    string main_line; // 2*(-10+25)^1/2*0.15
+    cin >> main_line;
     cout << my_amazing_calculator(main_line);
 }
