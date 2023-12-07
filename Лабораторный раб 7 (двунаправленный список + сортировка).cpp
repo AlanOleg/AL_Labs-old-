@@ -32,7 +32,7 @@ LinkedList::~LinkedList() {
     while (current != nullptr) {
         first = first->next;
         delete current;
-        current = first;
+        Node* current = first;
     }
 }
 
