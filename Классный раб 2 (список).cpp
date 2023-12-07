@@ -26,9 +26,9 @@ private:
 LinkedList::~LinkedList() {
     Node* current = first;
     while (current != nullptr) {
-        Node* next = current->next;
+        first = first->next;
         delete current;
-        current = next;
+        Node* current = first;
     }
 }
 
